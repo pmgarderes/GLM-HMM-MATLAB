@@ -1,0 +1,30 @@
+# Ignore backup and autosave files
+*.asv
+*.autosave
+
+# Ignore Simulink cache files
+slprj/
+*.slxc
+*.slxautobackup
+
+# Ignore compiled MEX files
+*.mex*
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+
+# Ignore MATLAB crash dumps
+matlab_crash_dump.*
+javaclasspath.txt
+java.opts
+
+# Ignore project files
+*.prj
+
+# Ignore generated figures or large data
+*.fig
+*.mat
+*.csv
+*.log
