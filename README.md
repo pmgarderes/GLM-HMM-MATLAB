@@ -1,8 +1,10 @@
 # GLM-HMM MATLAB Toolbox
 
-A simple and modular MATLAB implementation of the Generalized Linear Model Hidden Markov Model (GLM-HMM), adapted from Ashwood et al. (2022). This toolbox allows fitting latent behavioral states to choice data using state-specific GLMs and EM inference.
-see the following link for the authors notebooks (python implementation)
-https://github.com/zashwood/ssm/blob/ster/noteboomaks/2b%20Input%20Driven%20Observations%20(GLM-HMM).ipynb
+A simple and modular MATLAB implementation of the Generalized Linear Model Hidden Markov Model (GLM-HMM), adapted from Ashwood et al. (2022). This toolbox allows fitting latent behavioral states to choice data using state-specific GLMs and EM inference.  
+see the following link for the authors notebooks (python implementation)  
+https://github.com/zashwood/ssm/blob/ster/noteboomaks/2b%20Input%20Driven%20Observations%20(GLM-HMM).ipynb  
+
+
 ---
 
 ## 🧠 What It Does
@@ -22,6 +24,25 @@ https://github.com/zashwood/ssm/blob/ster/noteboomaks/2b%20Input%20Driven%20Obse
 
 ---
 
+
+
+
+### 🧪 Demo: Simulated Data
+
+To test the toolbox on ground-truth simulated behavior:
+
+```matlab
+run demo/Demo_simulated_data.m
+```
+
+---
+
+
+![Demo Output](demo/Example_1000trials_demo.png)
+
+
+---
+
 ### 🔁 Example: Fit to Your Own Data
 
 Prepare two vectors:
@@ -38,16 +59,6 @@ params.GLMHMM.pop_weigths = 1;
 params.GLMHMM.display_output = 1;
 
 Results = Fit_GLMHMM_GNGdata(stimIntensity, trialOutcome, params.GLMHMM);
-```
-
----
-
-### 🧪 Demo: Simulated Data
-
-To test the toolbox on ground-truth simulated behavior:
-
-```matlab
-run demo/Demo_simulated_data.m
 ```
 
 ---
